@@ -50,6 +50,7 @@ app.get('/api/search/:search_term', function(req, res){
 	client.search(searchterm, {page:offset})
 	.then( function(images){
 		//console.log(images);
+		res.setHeader('Content-Type', 'application/json');
 		res.send(JSON.stringify(images));
 	});
 	
@@ -59,6 +60,8 @@ app.get('/api/search/:search_term', function(req, res){
 
 // LAST SEARCH STATISTICS
 app.get('/api/lastsearch/', function(req, res){
+
+	res.setHeader('Content-Type', 'application/json');
 
 	mongodb.connect(url, function( err, db ){
 				

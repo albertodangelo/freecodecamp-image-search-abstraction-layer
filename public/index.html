@@ -1,1 +1,40 @@
-index.html
+<!DOCTYPE html>
+<html>
+<head>
+	<title>freeCodeCamp Image Search Project</title>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<h1>Image Search Abstraction Layer</h1>
+<p><strong>Part 1</strong>. Insert the Searchterm in the URL and get the corresponding images. Within the URL parameter "offset" you can paginate through the responses.</p>
+<p><strong>Part 2</strong>. With a second URL you can display the last 10 search terms.</p>
+<h2>How to use image search?</h2>
+<p class="grey">
+	Example URL: <a href="https://daa-image-search-api.glitch.me/api/search/iyengar yoga horgen?offset=1" target="_blank">https://daa-image-search-api.glitch.me/api/search/iyengar yoga horgen?offset=1</a>
+</p>
+<h2>Output</h2>
+<p class="grey">
+
+  { <br />
+    "type": "image/jpeg",<br />
+    "width": 373,<br />
+    "height": 373,<br />
+    "size": 13386,<br />
+    "url": "https://lh6.googleusercontent.com/-cdZWCgWf6rc/AAAAAAAAAAI/AAAAAAAAABI/jURuV8k0aWs/photo.jpg",<br />
+    "thumbnail": {<br />
+      "url": "https://encrypted-tbn0.gstatic.com/<br />images?q=tbn:ANd9GcRGqbueRFqv-Z0NZCX_3p7pf-lGwRmFAv2VRJkLz_rPbp3sIkZaVK89Uw",<br />
+      "width": 122,<br />
+      "height": 122<br />
+    },<br />
+    "description": "Iyengar Yoga Horgen - Google+",<br />
+    "parentPage": "https://plus.google.com/+IyengaryogahorgenChmap"<br />
+  }
+
+</p>
+<h2>How to find the last Search Terms?</h2>
+<p class="grey">
+Click this URL: <a href="http://daa-image-search-api.glitch.me/api/lastsearch/" target="_blank">http://daa-image-search-api.glitch.me/api/lastsearch/</a>
+</p>
+</body>
+</html>
